@@ -2,7 +2,7 @@ document.getElementsByTagName("button")[0].onclick =
 
 function foto(event){
         event.preventDefault();
-        navigator.mediaDevices.getUserMedia({ video: true })
+        navigator.mediaDevices.getUserMedia({ video: {facingMode: 'environment'}})
             .then(function (stream) {
                 const videoElement = document.getElementsByTagName("video")[0];
                 videoElement.srcObject = stream;
