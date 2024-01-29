@@ -1,0 +1,18 @@
+div{
+    text-align: center;
+}
+
+button{
+    transition: all 0.2s ease;
+    cursor: pointer;
+    padding: 20px 25px;
+    font-size: large;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
